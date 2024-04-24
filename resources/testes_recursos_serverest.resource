@@ -25,7 +25,7 @@ ${listarProduto}             //a[@data-testid='listar-produtos'][contains(.,'Lis
 *** Keywords ***
 
 Abrir o navegador 
-  Open Browser  browser=chrome
+  Open Browser  ${URL}   browser=chrome   options=add_argument("--headless")
   Maximize Browser Window
 
 Fechar o navegador
