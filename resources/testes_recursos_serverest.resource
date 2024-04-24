@@ -18,14 +18,14 @@ ${nomeProduto}               nome
 ${precoProduto}              price
 ${descricaoProduto}          id:description
 ${quantidadeProduto}         quantity
-${cadastrarPButton}          //a[contains(.,'Cadastrar Produtos')]
-${listarProduto}             //a[contains(.,'Listar Produtos')]
+${cadastrarPButton}          //button[@data-testid='cadastarProdutos'][contains(.,'Cadastrar')]
+${listarProduto}             //a[@data-testid='listar-produtos'][contains(.,'Listar Produtos')]
 
 
 *** Keywords ***
 
 Abrir o navegador 
-  Open Browser  ${URL}   browser=chrome   options=add_argument("--headless")
+  Open Browser   browser=headlesschrome  
   Maximize Browser Window
 
 Fechar o navegador
