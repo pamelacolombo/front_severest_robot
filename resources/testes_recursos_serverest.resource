@@ -11,15 +11,15 @@ ${cadastrarButton}           //button[@data-testid='cadastrar'][contains(.,'Cada
 ${emailInput}                email
 ${senhaInput}                password
 ${entrarButton}              //button[@data-testid='entrar'][contains(.,'Entrar')]
-${listarUsuario}             //a[@data-testid='listar-usuarios'][contains(.,'Listar Usuários')]
+${listarUsuario}             //a[contains(.,'Listar Usuários')]
 ${excluirButton}             (//button[@type='button'][contains(.,'Excluir')])[1]
-${cadastrarProdutos}          //a[@data-testid='cadastrar-produtos'][contains(.,'Cadastrar Produtos')]
+${cadastrarProdutos}         //a[@data-testid='cadastrar-produtos'][contains(.,'Cadastrar Produtos')]
 ${nomeProduto}               nome
 ${precoProduto}              price
 ${descricaoProduto}          id:description
 ${quantidadeProduto}         quantity
-${cadastrarPButton}          //button[@data-testid='cadastarProdutos'][contains(.,'Cadastrar')]
-${listarProduto}             //a[@data-testid='listar-produtos'][contains(.,'Listar Produtos')]
+${cadastrarPButton}          //a[contains(.,'Cadastrar Produtos')]
+${listarProduto}             //a[contains(.,'Listar Produtos')]
 
 
 *** Keywords ***
