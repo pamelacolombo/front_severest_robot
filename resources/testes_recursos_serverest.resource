@@ -48,13 +48,14 @@ Passo 2 - Clicar em cadastre-se
   Click Element                    locator=${cadastreseLink}
 
 Passo 3 - Digitar um nome
+  Criar massa de dados de acesso
   Wait Until Element Is Visible    locator=${nomeInput}
-  Input Text                       locator=${nomeInput}  text=Pamela Teste 
+  Input Text                       locator=${nomeInput}  text=${NOME}  
   Sleep  2s
 
 Passo 4 - Digitar um e-mail
   Wait Until Element Is Visible    locator=${emailInput}
-  Input Text                       locator=${emailInput}  text=pamelateste@serverest.com.br
+  Input Text                       locator=${emailInput}  text=${EMAIL}
   Sleep  2s
 
 Passo 5 - Digitar uma senha
