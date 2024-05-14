@@ -35,6 +35,7 @@ Criar nome
   ${palavra_randomica_nome}  Generate Random String  length=8  chars=[LETTERS]
   ${palavra_randomica_nome}  Convert To Lower Case    ${palavra_randomica_nome}  
   Set Test Variable    ${NOME}             ${palavra_randomica_nome} 
+  
 Criar e-mail
   ${palavra_randomica_email}  Generate Random String  length=8  chars=[LETTERS]
   ${palavra_randomica_email}  Convert To Lower Case    ${palavra_randomica_email} 
